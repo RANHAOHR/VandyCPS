@@ -1,0 +1,20 @@
+<launch>
+
+  <!-- Launch controller -->
+  <node name="flight_main_node" pkg="flight_main" type="flight_node">
+  </node>
+
+   <!-- Launch vision node   -->
+   <node name="cps_vision" pkg="cps_vision" type="cps_vision_node">
+   </node>
+
+   <!-- Launch rosbag for recording, if necessary
+   <arg name ="file_name" default="polaris_sensor_green.bag"/>
+   <arg name ="dest_path" default="/home/rxh349/ros_ws/src/Davinci_Calibration/davinci_calibration/polaris_topics"/>
+   <arg name ="polaris_topic" default="/polaris_sensor/targets"/>
+   <node name ="recorder" pkg="rosbag" type="record" output="screen" args="-O $(arg dest_path)/$(arg file_name) $(arg polaris_topic)">
+   </node>
+-->
+
+
+</launch>
